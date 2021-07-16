@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;        }
+
+    header{
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    display: block;
+}
+
+.inner_header {
+    width: 1000px; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    vertical-align: middle;
+    display: table;
+    margin-top: -1.2em;
+}
+
+.inner_header ul{
+    float: right;     
+    margin-top: -6.2em;
+    height: 100%;
+}
+
+ .inner_header a{
+     font-size: 20px;
+     color: red;
+     display: table;
+     padding: 0px 20px;
+     float: left;
+     font-weight: 800;
+ }   
+
+.inner_header li {
+    display: inline;
+}
+
+        .hoodie1 { /*Here I put the general settings for the first product*/
+            width: 1000px; 
+            height: auto;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .details1 {  
+            float: right; /*This made the text go to the edge of the product*/
+            margin-top: -29em;
+        }
+
+        .details1 button{ /*Here I set the settings of the button*/
+            color:white;
+            background-color: red;
+            padding: 20px 30px;
+            border: none;
+            font-weight: 800;
+            font-size: 150%;
+        }
+
+        .details1 h2{
+            font-size: 40px;
+            color: red;
+        }
+
+        .details1 span{
+            color: black;
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://i.imgur.com/DtV7hEH.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodies</title>
+</head>
+<body>
+    <header>
+        <div class="inner_header">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/Isho-lightmode-01.png" alt="Isho stores logo" width="150" height="150"></a>
+            </div>
+            <ul>
+                <a href="./second-page.html"><li> Hoodies</li></a>
+                <a href="#"><li>Contact us</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hoodie1"> <!--This is where the first product starts-->
+        <img src="./img/1sthooide.JPG" alt="Tiger hoodie" width="350" height="459.3" >
+        <div class="details1"> <!--This div makes it easier to control the text-->
+            <h1>Tiger hoodie from H&M</h1>
+            <br>
+            <p >Long-sleeved sweatshirt with a jersey-lined drawstring hood, kangaroo    pocket, <br> and ribbing at cuffs and hem. Soft, brushed inside.</p>
+            <br>
+            <h2>$15.99 <span>$34.99</span></h2>
+            <br>
+            <a href="https://www2.hm.com/en_ca/productpage.0738713044.html?ef_id=EAIaIQobChMIg7zq--nT8QIVsnxvBB2MqgQSEAYYASABEgLXjvD_BwE:G:s&s_kwcid=AL!860!3!490125603346!!!g!311420096628!&gclid=EAIaIQobChMIg7zq--nT8QIVsnxvBB2MqgQSEAYYASABEgLXjvD_BwE"  target="_blank"><button>Check the product</button></a> <!--I used this button to link it to the H&M website-->
+        </div>
+    </div>
+</body>
+</html>
