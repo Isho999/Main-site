@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+
+        *{ /*Here I set the setting for everything*/
+            font-family: 'Montserrat', sans-serif;
+        }
+        table, th, td { /*I set th4e settings for the table here*/
+            border: 2px solid whitesmoke;   
+            border-collapse: collapse;/*Here I set the removed the border collapes*/
+            width: 50%; /*Here I added the width*/
+            text-align: center; /*aligned it in the center*/
+        }
+
+        h1{
+            color: lightcoral;
+        }
+
+        #first-table{
+            background-color: #3CB371;
+            color: whitesmoke;
+        }
+        #second-table {
+            color: whitesmoke;
+        }
