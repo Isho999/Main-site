@@ -62,3 +62,54 @@ footer a{
     color: white;
     padding: 0 20px;
 }
+
+nav ul{
+        float: right;
+    }
+    nav img{
+        width: 170px;
+        height: 170px;
+    }
+    nav li{
+        display: flex;
+    }
+
+    footer img{
+        width: 170px;
+        height: 170px;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
+
+    @media only screen and (max-width: 700px){
+        
+        nav ul{
+            float: right;
+        }
+        nav li{
+            display: flex;
+        }
+        nav img{
+            width: 170px;
+            height: 170px;
+        }
+    
+        #images img{
+            width: 100%;
+
+        }
+    
+        footer ul{
+            float: right;
+        }
+    
+        footer li{
+            display: flex;
+        }
+    }
