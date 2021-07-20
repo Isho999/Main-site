@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
 *{
     margin: 0;
@@ -47,7 +48,7 @@ form {
     padding: 20px;
     display: block;
     margin: 0 auto;
-    width: 500px;
+    width: 50%;
     height: 100%;
     background-color: red;
     text-align: center;
@@ -60,6 +61,18 @@ form {
     color: white;
     background-color: black;
     border: none;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+button a{
+    color: white;
 }
 footer {
     margin-top: 20px;
@@ -86,4 +99,30 @@ footer a{
     font-weight: 800;
     color: white;
     padding: 0 20px;
+}
+
+@media only screen and (max-width: 750px) { 
+    nav ul{
+        float: right;
+    }
+    nav img{
+        width: 170px;
+        height: 170px;
+    }
+    nav li{
+        display: flex;
+    }
+
+    footer img{
+        width: 170px;
+        height: 170px;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
 }
