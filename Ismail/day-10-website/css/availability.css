@@ -82,3 +82,36 @@ footer a{
     color: white;
     padding: 0 20px;
 }
+
+@media only screen and (max-width: 700px) { 
+    nav ul{
+        float: right;
+    }
+    nav li{
+        display: flex;
+    }
+
+    nav img{
+        width: 170px;
+        height: 170px;
+    }
+
+    article {
+        background: url("https://media.karousell.com/media/photos/products/2020/6/4/razer_blade_15_base_laptop_d5n_1591263373_5e4ad670_progressive");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    footer {
+        margin-top: -13em;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
+}
