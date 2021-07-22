@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+*{ /*HEre I added these settings for everything on the page*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*This remove links underline*/
+    list-style: none; /*This remove the * before the list*/
+    font-family: 'Montserrat', sans-serif; /*This is where I set the famil font */
+}
+
+header { /*Background color of the header*/
+    background-color: red;
+}
+
+nav{ /*Here is the nav settings*/
+    width: 100%; /*The width and height is 100% so it be responsive*/
+    height: 100%;
+    display: block; /*Made sure that it display as a block*/
+    margin: 0 auto; /*Margin from top is 0 and from the right is auto*/
+}
+
+nav ul{ /*Nav ul settings*/
+    margin-top: 5.5em; /*Margin top so it be aligned with the logo*/
+    float: right; /*The whole list will float to the right*/
+}
+
+nav li{
+    display: inline; /*Here the list display inline*/
+}
+
+nav a{ /*Settings for the links*/
+    font-weight: 800; /*Chnaged the weight to bold*/
+    color: white; /*The font color to whtie*/
+    padding: 0 20px; /*Didn't add padding to the top but added to the left*/
+}
+
+nav a:hover { /*When you hover over the link it will turn black and weight will be light*/ 
+    font-weight: 400;
+    color: black;
+}
+
+article { /*Article settings here*/
+    margin-top: -12em; /*Added margin so it be aligned with the aside element*/
+    padding: 20px; /*Gave it soem padding*/
+    text-align: center; /*And amdesure it's in the center*/
+}
+
+article h1{ /*The h1 in the article*/
+    font-size: 2em; /*Made the h1 bigger*/
+    text-align: center; /*and aligned it to the center*/
+}
+
+aside { /*here I set the settings for the aside*/
+    padding: 10px; /*some padding*/
+    border: red 2px solid; /*added*/
+    width: 150px;
+ }
+
+form { /*Here I set the settings for the form*/
+    color: white;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+#submit{ /*Same here for the submit button*/
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+#reset /*Same here but this is for the reset*/{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+
+button { /*Same here but for the button*/
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+button a{ /*Chnaged the link color*/
+    color: white;
+}
+footer { /*Fooer has the same settings as the header, so I won't explain it*/
+    margin-top: 20px; /*Added some space between it and the form*/
+    background-color: red;
+}
+
+footer .inner-footer { 
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer ul{ 
+    margin-top: 5.5em;
+    float: right;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    font-weight: 800;
+    color: white;
+    padding: 0 20px;
+}
+
+footer a:hover {
+    font-weight: 400;
+    color: black;
+}
+
+@media only screen and (max-width: 750px) { /*Here I set the media to display on screen with 700px and smaller*/
+    nav ul{ /*Made sure the nav float to the right*/
+        float: right;
+    }
+    nav img{ /*Made the logo smaller*/
+        width: 170px;
+        height: 170px;
+    }
+    nav li{ /*Changed the display so it doesn't be inline*/
+        display: flex;
+    }
+
+    article { /*changed the margin to 0 so it goes under the aside*/
+        margin: 0;
+    }
+    /*Same settings for the nav*/
+    footer img{
+        width: 170px;
+        height: 170px;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
+}

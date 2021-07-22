@@ -1,0 +1,180 @@
+/*NOTE: Base model.css have the code*/
+
+/*Some of the stuff will repeat on other pages, so I will only explain it here*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+*{ /*HEre I added these settings for everything on the page*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*This remove links underline*/
+    list-style: none; /*This remove the * before the list*/
+    font-family: 'Montserrat', sans-serif; /*This is where I set the famil font */
+}
+
+header { /*Background color of the header*/
+    background-color: red;
+}
+
+nav{ /*Here is the nav settings*/
+    width: 100%; /*The width and height is 100% so it be responsive*/
+    height: 100%;
+    display: block; /*Made sure that it display as a block*/
+    margin: 0 auto; /*Margin from top is 0 and from the right is auto*/
+}
+
+nav ul{ /*Nav ul settings*/
+    margin-top: 5.5em; /*Margin top so it be aligned with the logo*/
+    float: right; /*The whole list will float to the right*/
+}
+
+nav li{
+    display: inline; /*Here the list display inline*/
+}
+
+nav a{ /*Settings for the links*/
+    font-weight: 800; /*Chnaged the weight to bold*/
+    color: white; /*The font color to whtie*/
+    padding: 0 20px; /*Didn't add padding to the top but added to the left*/
+}
+
+nav a:hover { /*When you hover over the link it will turn black and weight will be light*/ 
+    font-weight: 400;
+    color: black;
+}
+
+article { /*Here I set the settings for the article*/
+    background: url("https://daayri.com/wp-content/uploads/2020/04/cCS2XU9a4Pg373zMH39xQ8.jpg"); /*Added a backround image*/
+    background-size: 100%; /*made the size 100% so it be responsive*/
+    height: 600px; /*Gave it 600px height*/
+    background-repeat: no-repeat; /*Made sure it doesn't repeat*/
+    width: 100%; /*and gave the whole article 100% width*/
+}
+
+article h1,p{ /*Here I set the settings for the heading and the paragraph*/
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+
+article h1{ /*I made the heading bigger by it self here*/
+    font-size: 3em;
+}
+
+article p{ /*Samer here for the paragraph tag*/
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+ aside { /*Here I set the settings aisde*/
+    padding: 10px;
+    border: red 2px solid; /*Gave it a border*/
+    width: 150px; /*and widh of 150px*/
+ }
+
+table, th, td{ /*Ere I set the settings for the tabe and table row and table data*/
+    border: red 4px solid; /*Gave it a border*/
+    border-collapse: collapse; /*Collapsed the border*/
+    margin-left: auto; /*This and the line below will center the tbale*/
+    margin-right: auto;
+    padding: 20px;
+}
+
+.title{ /*here I set the title*/
+    text-align: center; /*Cenerd the title*/
+    margin-top: -5em; /*Made sure it's aligned with the aside*/
+}
+
+#order {  /*Here is the order section*/
+    margin-top: 30px; /*took the section down a little bit*/
+    text-align: center;/*aligned the whole thing in the center*/
+    background: url("https://egpu.io/wp-content/uploads/2018/09/2018-razer-blade-15-gtx-1070-fhd-144hz.jpg"); /*Gave it a background image*/
+    height: 500px; /*seted the height*/
+    background-size: 100%; /*Changed the size to 100%*/
+    background-repeat: no-repeat; /*Made sure it doesn't repeat*/
+}
+
+#order h1{ /*Chnaged the h1 size and gave it some padding*/
+    padding: 20px;
+    font-size: 2em;
+}
+
+#order button{ /*Here I set the settings for the order button*/
+    font-size: 1em;
+    background-color: red;
+    padding: 20px;
+    border: none;
+}
+#order button:hover{ /*When you hover over the button the background will turn black*/
+    background-color: black;
+}
+
+#order a{ /*Changed the link color*/
+    color: white;
+}
+
+footer { /*Footer has the same settings as the header*/
+    margin-top: 20px;
+    background-color: red;
+}
+
+footer .inner-footer {
+    width: 100; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer ul{
+    margin-top: 5.5em;
+    float: right;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    font-weight: 800;
+    color: white;
+    padding: 0 20px;
+}
+
+footer a:hover {
+    font-weight: 400;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) { /*Made sure it's only for screen with 700 px and lower*/
+    nav ul{ /*Made sure the nav float to the right*/
+        float: right;
+    }
+    nav li{ /*Changed the display so it doesn't be inline*/
+        display: flex;
+    }
+    nav img{ /*Made the logo smaller*/
+        width: 170px;
+        height: 170px;
+    }
+
+    article p{ /*Changed the settings for the article paragraph so it appear more*/
+        color: white;
+        font-size: 20px;
+    }
+    aside { /*made the aside go up because it was too low*/
+        margin-top: -23em;
+    }
+    .title{ /*Gave the title 0 margin so it goes under the aside*/
+        margin: 0;
+    }
+    footer { /*Same thing for the header*/
+        margin-top: -13em;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
+}

@@ -1,0 +1,86 @@
+<!--NOTE: order.html and base-model-form.html have similar style, that's why I won't add comments there-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/order.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isho stores</title>
+</head>
+<body>
+    <header> <!--Here I added the header-->
+        <nav> 
+            <a href="./index.html"><img src="./img/Isho-darkmode-01.png" alt="Isho stores logo" width="200px"
+            height="200px"> </a> <!--HEre I added the logo-->
+            <ul> <!--and here I linked all the pages as a ul-->
+                <li><a href="index.html">Main page</a></li> 
+                <li><a href="order.html">Order</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="SitePlan.html">SitePlan</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <aside><!--Here I added the aside element -->
+        <h1>Why should you pick our stores?</h1>
+        <hr><br>
+        <p>We have the best prices in the market, and fastest delivery!</p>
+    </aside>
+    <article> <!--Here is the article element-->
+        <h1>What are you waiting for?</h1>
+        <p>Fill out the form below and get an <b>Advanced Model Razer Blade 15!</b></p>
+    </article>
+
+    <form action="mailto:W0468716@campus.nscc.ca?subject=From%20our%20Website" method="post" enctype="text/plain"> <!--I started the form here and added the mailto my email-->
+        <label for="name">Full name:</label><br> <!--Here is the first lable-->
+        <input type="text" name="name" id="name" min="2" placeholder="Name" pattern="[A-Za-z]" title="Enter a valid name"><br><br><!--This input is text and the pattern is a-z so there won't be numbers. I gave it a title to display when the pattern doesn't match-->
+
+        <label for="city">City</label><br><!--Here is a lable for city-->
+        <input type="text" name="city" id="city" min="2" placeholder="City" pattern="[A-Za-z]" title="Enter a valid city name"> <br><br> <!--same thing as above-->
+
+        <label for="code">Postal Code:</label><br> <!--Here is the label for Postal Code-->
+        <input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="code" id="code" placeholder="Ex. B8T 5O9" title="Enter a valid Postal Code"><br><br> <!--The pattern is letter-number-letter and then number-letter-number -->
+
+        <label for="age">Age</label><br> <!--Here is the lable for age-->
+        <input type="number" name="age" id="name"  min="16"><br><br> <!--The input is number and the min is 16 or higher-->
+
+        <label for="mail">Email</label><br> <!--This is a email label-->
+        <input type="email" name="mail" id="mail" title="Enter a valid Email Address" pattern="[a-z]{0-99}"><br><br> <!--The input is email and the pattern is a-z and any number from 0-99-->
+
+        <label for="phone">Phone Number:</label><br> <!--Phone number lable-->
+        <input type="tel" name="phone" id="phone" placeholder="123-456-789" pattern="^\d{3}-\d{3}-\d{4}$" title="Enter a vaild Phone Number"><br><br>
+
+        <label for="RAM">Memeory</label><br> <!--This lable is about RAM-->
+        <input type="radio" name="RAM" id="NAME"> 16GB <br> <!--This input is a radio and same thing below-->
+        <input type="radio" name="RAM" id="RAM"> 32GB <br><br>
+
+        <label for="color">Pick laptop color</label> <!--Color lable-->
+        <input type="color" name="color" id="color"><br><br> <!--the input is set to be a color selectro-->
+
+        <label for="Date">When do you want it to arrive?</label><br> <!--Asking for arriving date-->
+        <input type="date" name="Date" id="Date"><br><br> <!--The input is set to date, it's gonna display a calender-->
+
+        <label for="gift">Is this a gift?</label><br> <!--Gift lable-->
+        <input type="radio" name="gift" id="gift"> Yes<br> <!--The input is radio here, and same below-->
+        <input type="radio" name="gift" id="gift"> NO<br><br>
+
+        <input type="submit" id="submit"> <!--Here is the submit button-->
+        <input type="reset" id="reset"> <!--and the reset button-->
+        <button><a href="./base-model.html">Base Model</a></button> <!--You click here to go to the base model page, you can't access it from the main page-->
+    </form> <!--Closed the form here-->
+    <footer> <!--Here is the footer-->
+        <section class="inner-footer"> <!--Here I added a section called inner-footer to give me more control-->
+        <!--Everything here is the same as the header-->
+        <img src="./img/Isho-darkmode-01.png" alt="Isho stores logo" width="200px"
+        height="200px"> 
+        <ul>
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="availability.html">Availability</a></li>
+            <li><a href="SitePlan.html">SitePlan</a></li>
+            
+        </ul> 
+        </section>
+    </footer>
+</body>
+</html>

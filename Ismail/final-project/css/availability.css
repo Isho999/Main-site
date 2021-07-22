@@ -1,0 +1,148 @@
+/*Anything not commented was already commented in the main page*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background-color: red;
+}
+
+nav{
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul{
+    margin-top: 5.5em;
+    float: right;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    font-weight: 800;
+    color: white;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    font-weight: 400;
+    color: black;
+}
+
+aside { /*Gave settings for the aside*/
+    background-color: black; /*Changed the color so it be more easy to read*/
+    padding: 10px; 
+    border: red 2px solid; /*added border around the border*/
+    width: 150px;
+ }
+
+ #main-content { /*HEre I set he settings for the section*/
+     color: white; /*Font color is white*/
+    background: url("https://www.caffeinegaming.com/wp-content/uploads/2019/05/kyWk9EuWGd3Xu2TNSDvc2j.jpg"); /*Gave the whole section a background*/
+    background-size: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+ }
+
+article { /*Here I set the settings for the article*/
+    text-align: center;    
+    padding: 20px;
+    font-size: 2em;
+    color: black;
+}
+
+article button { /*Smae thing for the button*/
+    font-size: 60%;
+    margin-top: 1em;
+    padding: 1%;
+    background-color: red;
+    border: none;
+}
+
+article button:hover { /*When you hove over the buton i will turn black*/
+    background-color: black;
+}
+
+article a{ /*Changed the link color to white*/
+    color: white;
+}
+
+footer {
+    background-color: red;
+}
+
+footer .inner-footer {
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer ul{
+    margin-top: 5.5em;
+    float: right;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    font-weight: 800;
+    color: white;
+    padding: 0 20px;
+}
+
+footer a:hover {
+    font-weight: 400;
+    color: black;
+}
+
+
+@media only screen and (max-width: 700px) { 
+    nav ul{
+        float: right;
+    }
+    nav li{
+        display: flex;
+    }
+
+    nav img{
+        width: 170px;
+        height: 170px;
+    }
+
+    #main-content {/*Changed some settings for the secion*/
+        background: url("https://media.karousell.com/media/photos/products/2020/6/4/razer_blade_15_base_laptop_d5n_1591263373_5e4ad670_progressive"); /*I noticed when the screen become smaller, the text won't be clear so I changed the background*/
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    article { /*Changd the font color of the aricle to white*/
+        color: white;
+    }
+
+    footer {
+        margin-top: -13em;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+    footer li{
+        display: flex;
+    }
+}
